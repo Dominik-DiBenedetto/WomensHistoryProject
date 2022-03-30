@@ -1,0 +1,42 @@
+:root{
+    --title-font-size: 2rem;
+    --header-height: 119px;
+}
+
+.title{
+    font-size: var(--title-font-size);
+    width: max-content;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: calc(100vh - var(--nav-bar-height));
+    margin: 0;
+}
+
+.image-holder{
+    height: 50%;
+    aspect-ratio: 1;
+    padding: 0 1rem;
+}
+
+img{
+    width: 100%;
+    height:100%;
+}
+
+.text-holder{
+    padding: 0 2rem;
+    width: 80%;
+    height: 100%;
+}
+
+.section-header{
+    font-size: 1.25rem;
+}
+
+.section-body{
+    padding: 0 2rem;
+}
