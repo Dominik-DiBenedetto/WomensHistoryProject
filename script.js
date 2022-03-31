@@ -17,3 +17,23 @@ document.addEventListener("click", e => {
     anchor.classList.add("active")
   }
 })
+
+const galleryImgs = document.querySelectorAll('.g-img')
+
+galleryImgs.forEach(img => {
+  img.addEventListener('click', (e) => {
+    console.log("clicked")
+    const target = e.target
+    const imgDis = document.querySelector('.img-viewer')
+
+    imgDis.classList.remove("hidden")
+    const imgDisElm = imgDis.querySelector('img')
+    imgDisElm.setAttribute("src", target.src)
+  })
+})
+
+document.querySelector('.close').addEventListener("click", () => {
+  const imgDis = document.querySelector('.img-viewer')
+
+  imgDis.classList.add("hidden")
+})
